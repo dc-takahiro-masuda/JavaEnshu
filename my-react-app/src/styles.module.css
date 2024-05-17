@@ -1,0 +1,63 @@
+* {
+    list-style: none;
+}
+
+button, .submitBtn {
+    padding: 5px 15px;
+    background-color:lightgrey;
+    border:none;
+    margin:2px;
+}
+
+.container {
+    padding: 20px 100px;
+}
+
+.formContainer {
+    padding: 20px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.todoLabel {
+    width:10%;
+}
+
+.inputTodoName {
+    width: 85%;
+    padding: 10px;
+}
+
+.submitContainer {
+    text-align: right;
+}
+
+.submitBtn {
+    padding: 5px 15px;
+}
+
+.deadline {
+    margin-right:5px;
+}
+
+.todoContainer {
+    display:flex;
+    justify-content: space-between;
+    font-size:20px;
+    padding:5px 10px;
+    margin-top:5px;
+    border:1px solid gray;
+    align-items: center;
+}
+
+.borderRed {
+    border:2px dashed red;
+}
+
+.borderYellow {
+    border:2px solid rgb(254, 209, 30);
+}
+
+.borderGreen {
+    border:2px solid rgb(121, 239, 89);
+}

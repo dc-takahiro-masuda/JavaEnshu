@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1	th:text="${title}"></h1>	
+
+<form th:action="@{/sample3_result}" th:object="${form}" method="post">
+    <div>
+        <label for="paramA">パラメータA:</label>
+        <input type="text" name="paramA" th:field="*{paramA}" />
+        <div th:if="${#fields.hasErrors('paramA')}" th:errors="*{paramA}" style="color: red;"></div>
+    </div>
+	<div>
+	    <label for="paramB">パラメータB:</label>
+	    <input type="text" name="paramB" th:field="*{paramB}" />
+	    <div th:if="${#fields.hasErrors('paramB')}" th:errors="*{paramB}" style="color: red;"></div>
+	</div>
+	<div>
+	    <label for="paramA">パラメータC:</label>
+	    <input type="text" name="paramC" th:field="*{paramC}" />
+	    <div th:if="${#fields.hasErrors('paramC')}" th:errors="*{paramC}" style="color: red;"></div>
+	</div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+
+</form>
+</body>
+</html>

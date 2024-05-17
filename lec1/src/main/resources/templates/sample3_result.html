@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div th:object="${form}">
+		<h1 th:text="'パラメータAは' + *{paramA} + 'です'"></h1>
+		<h1 th:text="'パラメータBは' + *{paramB} + 'です'"></h1>
+		<h1 th:text="'パラメータCは' + *{paramC} + 'です'"></h1>
+    </div>
+	
+</body>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h1	th:text="${title}"></h1>
+	<form method="get" th:action="@{/sample1_result}">
+	<p>パラメータA：<input type="text" name="paramA"></p>
+	<p>パラメータB：<input type="text" name="paramB"></p>
+	<p>パラメータC：<input type="text" name="paramC"></p>
+	<input type="submit" value="送信">
+	</form>
+</body>
+</html>

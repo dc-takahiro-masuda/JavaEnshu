@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		Form Test
+		<form>
+			<input type="text">
+			<input type="submit">
+		</form>
+		<div th:each="person: ${people}">
+			<span th:text="${person.name}"></span>
+			<span th:text="${person.age}"></span>
+			<span th:text="${person.address}"></span>
+			<span th:text="${person.job}"></span>
+		</div>
+	</body>
+</html>

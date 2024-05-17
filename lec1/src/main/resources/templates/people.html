@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<tr th:each="person: ${people}">
+			<td th:text="${person.name}">Name</td>
+			<td th:text="${person.age}">Age</td>
+		</tr>
+	</body>
+</html>

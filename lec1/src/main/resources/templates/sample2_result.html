@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>下記の書き方は、Formのプロパティを別々に扱う方法です</h1>
+	<h1 th:text="'パラメータAは' + ${form.paramA} + 'です'"></h1>
+	<h1 th:text="'パラメータBは' + ${form.paramB} + 'です'"></h1>
+	<h1 th:text="'パラメータCは' + ${form.paramC} + 'です'"></h1>
+
+	<h1>下記の書き方は、Formをまとめて扱う方法です</h1>
+	<div th:object="${form}">
+		<h1 th:text="'パラメータAは' + *{paramA} + 'です'"></h1>
+		<h1 th:text="'パラメータBは' + *{paramB} + 'です'"></h1>
+		<h1 th:text="'パラメータCは' + *{paramC} + 'です'"></h1>
+    </div>
+
+</body>
